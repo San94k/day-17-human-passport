@@ -2,3 +2,18 @@
 
 Продовжуємо безперервний стрік створення публічних репозиторіїв щодня.
 Сьогодні — день 17 із запланованих 30.
+
+
+`streak_day.py`
+```python
+from datetime import date
+
+START = date(2025, 7, 25)
+
+def streak_day(on: date | None = None) -> int:
+    if on is None:
+        on = date.today()
+    return (on - START).days + 1
+
+if __name__ == "__main__":
+    print(f"GitHub streak day: {streak_day()} (start: {START.isoformat()})")
