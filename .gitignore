@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Day 17: add README, marker file and streak counter"
+git branch -M main
+git remote add origin https://github.com/<твій-юзернейм>/day-17-human-passport.git
+git push -u origin main
